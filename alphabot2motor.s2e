@@ -2,7 +2,7 @@
 	"description": "Controler les moteurs d'un robot AlphaBot2",
 	"version": "1.0",
 	"author": "Benjamin Balga",
-	"homepage": "",
+	"homepage": "https://github.com/GIPdA/mBlock-AlphaBot2Motor",
 	"sort":0,
 	"javascriptURL":"",
 	"firmware":"1.0",
