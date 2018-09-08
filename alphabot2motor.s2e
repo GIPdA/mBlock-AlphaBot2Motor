@@ -1,0 +1,47 @@
+{	"extensionName": "AlphaBot2 Motor Controller",
+	"description": "Controler les moteurs d'un robot AlphaBot2",
+	"version": "1.0",
+	"author": "Benjamin Balga",
+	"homepage": "",
+	"sort":0,
+	"javascriptURL":"",
+	"firmware":"1.0",
+	"extensionPort":0,
+	"blockSpecs": [ 
+		[
+			"w",
+			"Motor AlphaBot2 :%d.motor  direction :%d.direction  speed :%n)",
+			"drive",
+			"Left",
+			"Forward",
+			"255",
+			{
+				"setup":"__ab2motor.begin();",
+				"inc":"#include \"ab2motor.h\"",
+				"def":"AB2Motor __ab2motor; \n",
+				"work":"__ab2motor.drive({0},{1},{2}); \n",
+				"loop":""
+			}
+		]
+	],
+	"menus": {
+		"motor":["Left","Right"],
+		"direction":["Forward","Backward"]
+	},
+	"values":{
+		"Left":0,
+		"Right":1,
+		"Forward":0,
+		"Backward":1
+	},
+	"translators":{
+		"fr_FR":{ 
+			"AlphaBot2 Motor Controller":"Controleur moteur pour AlphaBot2",
+			"Motor AlphaBot2 :%d.motor direction :%d.direction  speed :%n)":"Moteur AlphaBot2 :%d.motor direction :%d.direction  vitesse :%n)",
+			"Left":"Gauche",
+			"Right":"Droite",
+			"Forward":"Avant",
+			"Backward":"Arrière"
+		}
+	}
+}
