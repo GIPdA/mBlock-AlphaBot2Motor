@@ -1,6 +1,6 @@
 {	"extensionName": "AlphaBot2 Motor Controller",
 	"description": "Controler les moteurs d'un robot AlphaBot2",
-	"version": "1.0",
+	"version": "1.1",
 	"author": "Benjamin Balga",
 	"homepage": "https://github.com/GIPdA/mBlock-AlphaBot2Motor",
 	"sort":0,

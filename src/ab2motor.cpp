@@ -47,11 +47,11 @@ void AB2Motor::drive(int motor, int direction, int speed)
   }
   else if (motor == 1) { // Right
     if (direction == 0) { // Forward
-      digitalWrite(RightMotorBackward, LOW);
-      digitalWrite(RightMotorForward, HIGH);
-    } else {
-      digitalWrite(RightMotorForward, LOW);
       digitalWrite(RightMotorBackward, HIGH);
+      digitalWrite(RightMotorForward, LOW);
+    } else {
+      digitalWrite(RightMotorForward, HIGH);
+      digitalWrite(RightMotorBackward, LOW);
     }
     analogWrite(RightMotorSpeed, speed);
   }
